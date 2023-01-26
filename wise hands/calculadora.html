@@ -1,0 +1,38 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<script>
+
+    var n1 = Number(prompt("Digíte o primeiro número"));
+    var n2 = Number(prompt("Digite o segundo número"));
+    var sinal = prompt("Digite o sinal da operação");
+    
+
+    switch(sinal) {
+
+        case "+":
+          var soma = (n1 + n2);
+            document.write(soma);
+            break;
+
+        case "-":
+            var subtracao = (n1 - n2);
+            document.write(subtracao);
+            break;
+
+        case "*":
+        var multiplicacao = (n1 * n2);
+            document.write(multiplicacao);
+            break;
+
+        case "/":
+           var divisao = (n1 / n2);
+            document.write(divisao);
+            break;
+
+        default:
+            alert("operação inválida");
+            break;
+
+    }
+
+</script>
