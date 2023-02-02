@@ -1,0 +1,10 @@
+<meta charset="UTF-8">
+<script>
+    var kmPercorridos = Number.parseFloat(prompt("Digite a quantidade de Km rodados"));
+    var dias = Number(prompt("Digite a quantidade de dias"));
+    var valorPagar = ((dias * 90) + (kmPercorridos * 0.2 ));
+
+    
+    document.write("O valor a ser pago será de  " + valorPagar.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }) + " reais.");
+
+</script>

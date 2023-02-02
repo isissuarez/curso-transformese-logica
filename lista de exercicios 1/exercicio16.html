@@ -1,0 +1,16 @@
+<meta charset="UTF-8">
+<script>
+
+    var cigarrosDia = Number(prompt("Digite a quantidade de cigarros fumados por dia"));
+    var anosFumante = Number(prompt("Digite a quantos anos você fuma"));
+
+    const minutosDia = Number(1440);
+    const diasAno = Number(365);
+    const minutosPerdidosCigarro = Number(10);
+    
+
+    var diasPerdidos = ((((cigarrosDia * diasAno ) * anosFumante) * minutosPerdidosCigarro) / minutosDia );
+       
+    document.write("Você perdeu " + diasPerdidos.toLocaleString() + "  dias de vida, até agora.");
+
+</script>

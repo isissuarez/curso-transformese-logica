@@ -1,0 +1,8 @@
+<meta charset="UTF-8">
+<script>
+    var salario = Number.parseFloat(prompt("Digite o valor do seu salário"));
+    var salarioAumento = ( salario + (salario * (15 / 100)));
+    
+    document.write("Seu novo salário será de " + salarioAumento.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }) + " reais.");
+
+</script>

@@ -1,0 +1,13 @@
+<meta charset="UTF-8">
+<script>
+
+    var diasTrabalhados = Number(prompt("Digite a quantidade de dias"));
+    const jornadaDiaria = Number(8);
+    const SalarioHora = Number(25);
+
+    var valorSalario = ( diasTrabalhados * (jornadaDiaria * SalarioHora));
+
+    
+    document.write("O valor do salário à receber será de   " + valorSalario.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }) + " reais.");
+
+</script>
