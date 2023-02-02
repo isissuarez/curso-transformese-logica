@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+<script>
+
+    var distancia = Number.parseInt(prompt("Digíte uma distância em metros"));
+    var km = (distancia / 1000);
+    var hm = (distancia / 100);
+    var dam = (distancia / 10);
+    var dm = (distancia * 10);
+    var cm = (distancia * 100);
+    var mm = (distancia * 1000);
+
+    document.write(" A distância de " + distancia + " metros. Equivale a:");
+    pulaLinha();
+    document.write(km + " Quilometros.");
+    pulaLinha();
+    document.write(hm + " hectometros");
+    pulaLinha();
+    document.write(dam + " decâmetros.");
+    pulaLinha();
+    document.write(dm + " decimetros.");
+    pulaLinha();
+    document.write(cm + " centímetros");
+    pulaLinha();
+    document.write(mm + " milímetros.");
+    pulaLinha();
+
+
+    function pulaLinha() {
+        document.write("<br>");
+        document.write("<hr>");
+    }
+
+</script>
