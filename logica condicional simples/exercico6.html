@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<script>
+
+    var anoNascimento = Number(prompt("Digite o ano em que você nasceu"));
+    const anoAtual = (2023);
+    const maiorIdade = (18);
+
+    var idade = (anoAtual - anoNascimento);
+
+    if (idade < 18 ) {
+
+        var anosFaltantes = (maiorIdade - idade);
+
+        document.write("Faltam " + anosFaltantes + " para você poder realizar o alistamento militar");
+
+    }
+        
+    else {
+
+        var anosAtrasado = (idade - maiorIdade);
+
+        document.write("Você já ultrapassou em " + anosAtrasado + " anos, a idade indicada para o alistamento militar");
+    }
+
+</script>

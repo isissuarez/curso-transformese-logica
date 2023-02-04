@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+<script>
+
+    var velocidade = Number(prompt("Digíte a velocidade do veículo"));
+
+    if (velocidade > 80) {
+
+        alert("Você ultrapassou a velocidade permitida");
+
+        var multa = ((velocidade - 80) * 5);
+
+        document.write(" O valor da sua multa será de " + multa.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }) + " reais");
+
+    }
+
+    else {
+
+        document.write("Você está dentro da velocidade permitida. Boa Viagem!");
+    }
+
+</script>

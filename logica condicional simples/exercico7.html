@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+<script>
+
+    var nome = prompt("Digite seu nome:");
+    var valorComprado = Number.parseFloat(prompt("Digite o valor total em compras"));
+    var sexo = prompt("Digite seu sexo");
+
+switch (sexo) {
+
+    case 'f' :
+        
+    var descontoF = ( valorComprado - (valorComprado * (13/100)));
+
+    document.write("Parabéns, você ganhou um desconto de 13%. O novo total da sua compra é: " + descontoF.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }) + " reais.");
+    break;
+
+    case 'm' :
+
+    var descontoM = ( valorComprado - (valorComprado * (5/100)));
+
+    document.write("Parabéns, você ganhou um desconto de 5%. O novo total da sua compra é: " + descontoM.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }) + " reais.");
+    break;
+
+    default :
+    
+    alert("Sexo digitado inválido. Digíte f para feminino ou m para masculino");
+
+    break;
+        }
+</script>

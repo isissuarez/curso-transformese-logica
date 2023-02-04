@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<script>
+
+    var distancia = prompt("Informe a distância que deseja percorrer em KM:");
+
+    if (distancia < 200) {
+
+        const valorPorKM = (0.50);
+
+        var ValorPagar = (distancia * valorPorKM);
+
+        document.write("O valor da sua passagem será de: " + ValorPagar.toLocaleString("pt-br", { style: "currency", currency: "BRL" }));
+
+    }
+
+    else {
+
+        const valorPorKM = (0.45);
+
+        var ValorPagar = (distancia * valorPorKM);
+
+        document.write("O valor da sua passagem será de: " + ValorPagar.toLocaleString("pt-br", { style: "currency", currency: "BRL" }));
+    }
+
+</script>
