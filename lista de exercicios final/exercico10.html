@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+<script>
+
+   var numeros = [];
+   var pares = [];
+   var impares = [];
+
+   for (let i = 0; i < 10; i++) {
+
+      numeros[i] = Number(prompt("digíte um número"));
+      if (numeros[i] % 2 == 0)
+
+         pares.push(numeros[i]);
+
+      else
+
+         impares.push(numeros[i]);
+
+   }
+   document.write("números pares");
+   for (let i = 0; i < pares.length; i++) {
+    
+      document.write("<br>");
+      document.write(pares[i]);
+      document.write("<br>");
+      document.write("<hr>")
+   }
+   document.write("números ímpares");
+   for (let i = 0; i < impares.length; i++) {
+      
+      document.write("<br>");
+      document.write(impares[i]);
+      document.write("<br>");
+      document.write("<hr>")
+   }
+</script>
