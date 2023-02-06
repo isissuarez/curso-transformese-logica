@@ -1,0 +1,11 @@
+<meta charset="UTF-8">
+<script>
+
+var valorOriginal = Number.parseInt(prompt("Digíte o valor do produto"));
+const porcentagemDesconto = (9/100);
+
+var valorFinal =  ( valorOriginal - (valorOriginal * porcentagemDesconto));
+
+document.write( " O valor do produto com desconto será de: " + valorFinal.toLocaleString ("pt-BR", {style: "currency", currency: "BRL"}));
+
+</script>

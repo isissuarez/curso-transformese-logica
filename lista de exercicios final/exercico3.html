@@ -1,0 +1,11 @@
+<meta charset="UTF-8">
+<script>
+
+var dolaresCofre = Number.parseInt(prompt("Digíte o valor disronível em dólares."));
+var dolarHoje = Number.parseInt(prompt("Insira a cotação do dólar do dia."));
+
+var reais =  (dolaresCofre * dolarHoje );
+
+document.write( " Com o valor informado você poderá compra o equivalente à " + reais.toLocaleString ("pt-BR", {style: "currency", currency: "BRL"}));
+
+</script>

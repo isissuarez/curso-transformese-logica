@@ -1,0 +1,17 @@
+<meta charset="UTF-8">
+<script>
+
+var idadeAnos = Number(prompt("digite sua idade em anos,"));
+var idadeMeses = Number(prompt("digite os meses."));
+var idadeDias = Number(prompt("Digite os dias"));
+
+ function idadeTotalDias(idadeAnos, idadeMeses, idadeDias ) {
+
+    return (idadeAnos * 365) + (idadeMeses * 30) + idadeDias
+ }
+
+ var total = idadeTotalDias(idadeAnos, idadeMeses, idadeDias );
+
+ document.write( "Sua idade total é de " + total + "dias") ;
+
+</script>
